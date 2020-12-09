@@ -4,10 +4,16 @@
   "description": "Sandbox to play with React build tools",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --env.mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sergey",
   "license": "ISC",
+  "browserslist": [
+    "last 2 chrome versions",
+    "last 2 firefox versions"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.9",
@@ -15,6 +21,24 @@
     "@babel/plugin-transform-block-scoping": "^7.12.1",
     "@babel/plugin-transform-classes": "^7.12.1",
     "@babel/plugin-transform-template-literals": "^7.12.1",
-    "@babel/preset-env": "^7.12.7"
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.2",
+    "node": "^15.3.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "core-js": "^3.8.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
